@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Strength Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #dddddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 18px;
+      font-family: 'Segoe UI', sans-serif;
+      color: #eeff00;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Password Strength Checker</h1>
+    <p>Take the Password Test</p>
+    <p>Tip: When adding a capital or digit to your password, don't simply put the capital at the start and the digit at the end</p>
+    <form>
+      <label for="password">Type a password:</label>
+      <input type="password" id="password" name="password">
+      <input type="checkbox" id="show-password" name="show-password">
+      <label for="show-password">Show password</label>
+      <p id="password-strength">No Password</p>
+      <p id="password-stats">0 characters containing:</p>
+      <ul id="password-stats-list">
+        <li>Lower case</li>
+        <li>Upper case</li>
+        <li>Numbers</li>
+        <li>Symbols</li>
+      </ul>
+      <p id="time-to-crack">Time to crack your password: 0 seconds</p>
+    </form>
+  </div>
+
+  <div class="footer">
+   <b>This website developed by Yuvansh Koli (SE-B)</b>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
